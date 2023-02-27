@@ -1,0 +1,182 @@
+body {
+    font-family: "MetropolisRegular";
+    font-size: 16px;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.header, .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    color: #212529;
+    background-color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.hamburger, .hamburger:focus {
+    outline: none;
+}
+
+.hamburger {
+    padding: 10px 0 10px 10px;
+    z-index: 30;
+    cursor: pointer;
+    padding: 15px;
+    display: inline-block;
+    transition-property: opacity,-webkit-filter;
+    transition-property: opacity,filter;
+    transition-property: opacity,filter,-webkit-filter;
+    transition-duration: .15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger-box {
+    width: 36px;
+    height: 23px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger .hamburger-inner, .hamburger .hamburger-inner:after, .hamburger .hamburger-inner:before {
+    background: #212529;
+}
+
+.hamburger--slider .hamburger-inner {
+    top: 1.5px;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    width: 36px;
+    height: 3px;
+    background-color: #212529;
+    border-radius: 3px;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+}
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -1.5px;
+}
+
+.hamburger--slider .hamburger-inner:before {
+    top: 10px;
+    transition-property: opacity,-webkit-transform;
+    transition-property: transform,opacity;
+    transition-property: transform,opacity,-webkit-transform;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+}
+.hamburger-inner:before {
+    top: -10px;
+}
+.hamburger-inner:after, .hamburger-inner:before {
+    content: "";
+    display: block;
+}
+
+.hamburger .hamburger-inner:after {
+    width: 18px;
+    right: 0;
+}
+.hamburger--slider .hamburger-inner:after {
+    top: 20px;
+}
+.hamburger-inner:after {
+    bottom: -10px;
+}
+
+.above-the-fold {
+    padding: 150px 0;
+}
+
+.above-the-fold .zack {
+    display: block;
+    max-width: 250px;
+    margin: auto;
+}
+
+.above-the-fold p, .above-the-fold li {
+    font-size: 1.2rem;
+    line-height: 26px;
+}
+
+.btn-primary {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 2px solid #212529;
+    color: #fff;
+    background: #212529;
+    transition: all .3s ease;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: #212529;
+    border: 2px solid #212529;
+}
+
+.btn-secondary {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 2px solid #212529;
+    color: #212529;
+    background: #fff;
+    transition: all .3s ease;
+}
+
+.btn-secondary:hover {
+    background: #212529;
+    color: #fff;
+    border: 2px solid #212529;
+}
+
+.logo-bar {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+}
+
+.logos-section > img { max-width: 150px; margin: 15px 15px 0; }
+
+.testimonials { padding: 150px 0; }
+.testimonials-icos { max-width: 50px; }
+
+.features-and-benefits {
+    background-color: #212529;
+    color: #fff;
+    padding: 150px 0;
+}
+
+.fb-icons { max-width: 50px; }
+
+.process { padding: 150px 0; }
+
+.cta { background-color: #f7f7f7; padding: 100px 0 50px; }
